@@ -78,8 +78,17 @@ function clearCart() {
 
 // Finalizar venda
 checkoutBtn.addEventListener("click", () => {
-  modal.classList.remove("hidden");
-  clearCart();
+  const modalMessage = modal.querySelector("h2");
+
+  if (cart.length === 0) {
+    modalMessage.textContent = "O carrinho está vazio. Adicione itens antes de finalizar a compra.";
+    modal.classList.remove("hidden");
+    sidebar.classList.remove("open"); // Fecha o sidebar
+    return;
+  }
+  modalMessage.textContent = "Compra finalizada com sucesso!";
+  modal.classList.remove("hidden"); 
+  clearCart(); 
   sidebar.classList.remove("open"); // Fecha o sidebar
 });
 
