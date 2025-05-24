@@ -2,6 +2,8 @@
 
 Um e-commerce simples de cartas de Magic: The Gathering, utilizando HTML, CSS e JavaScript, com integração à API da [Scryfall](https://scryfall.com/docs/api).
 
+Acesse em [MagicStore](https://ismaelsidney.github.io/magicstore/)
+
 ## 🔥 Funcionalidades
 
 - ✅ Lista de cartas aleatórias (via API Scryfall)
