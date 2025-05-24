@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja de Cartas Magic: The Gathering</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1>Loja de Cartas Magic: The Gathering</h1>
+    <div class="cart-icon" onclick="toggleCart()">
+      🛒 <span id="cart-count">0</span>
+    </div>
+  </header>
+
+  <main>
+    <div class="container" id="product-list"></div>  
+  </main>
+  <div class="moreCard">
+        <button class="morecards-btn" onclick="moreCards()">Mais cartas</button>
+  </div>
+
+  <aside id="cart-sidebar" class="sidebar">
+    <div class="sidebar-header">
+      <h2>Carrinho</h2>
+      <button class="close-btn" onclick="toggleCart()">✖</button>
+    </div>
+    <ul id="cart-items" class="cart-list"></ul>
+    <div class="cart-footer">
+      <p><strong>Total:</strong> R$ <span id="cart-total">0.00</span></p>
+      <button class="checkout-btn" >Finalizar Compra</button>
+    </div>
+  </aside>
+
+  <!-- Modal de sucesso -->
+<div id="success-modal" class="modal hidden">
+  <div class="modal-content">
+    <button class="close-modal">&times;</button>
+    <h2>Venda finalizada com sucesso!</h2>
+  </div>
+</div>
+
+
+</body>
+</html>
